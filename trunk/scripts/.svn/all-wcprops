@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/53/trunk/scripts
+END
+runtime.sh
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/30/trunk/scripts/runtime.sh
+END
+runtime_sigma.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/33/trunk/scripts/runtime_sigma.sh
+END
+runtime_gamma.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/33/trunk/scripts/runtime_gamma.sh
+END
+runtime_parameters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/45/trunk/scripts/runtime_parameters.sh
+END
+runtime_epsilon.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/33/trunk/scripts/runtime_epsilon.sh
+END
+runtime_delta.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/33/trunk/scripts/runtime_delta.sh
+END
+runtime_k.sh
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/33/trunk/scripts/runtime_k.sh
+END
+runtime_parallel.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/53/trunk/scripts/runtime_parallel.sh
+END
+runtime_min_size.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/scripts/runtime_min_size.sh
+END

@@ -1,0 +1,892 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 42.13     80.45    80.45 26640975     0.00     0.00  QuasiCliqueCand::get_degree_cand_ext(unsigned int) const
+ 37.66    152.36    71.91 2806547376     0.00     0.00  std::vector<bool, std::allocator<bool> >::at(unsigned int)
+  4.65    161.24     8.88 43152246     0.00     0.00  QuasiCliqueCand::get_degree_x(unsigned int) const
+  4.11    169.08     7.84 1327837020     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int)
+  2.95    174.72     5.64  4227162     0.00     0.00  Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*, unsigned int) const
+  2.66    179.79     5.07   939421     0.00     0.00  Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*) const
+  1.75    183.13     3.34   212514     0.00     0.00  QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&)
+  1.32    185.66     2.53      102     0.02     1.83  QuasiCliqueCand::get_vertices_in_quasi_cliques_dfs(std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<bool, std::allocator<bool> >&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int)
+  0.49    186.60     0.94      102     0.01     0.03  QuasiCliqueCand::identify_vertices_not_in_quasi_cliques_neighborhood(Subgraph const*, std::vector<bool, std::allocator<bool> > const*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int)
+  0.37    187.30     0.70   364960     0.00     0.00  QuasiCliqueCand::degree_pruning_cand_ext(unsigned int)
+  0.25    187.77     0.47  1635122     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::string const&)
+  0.22    188.19     0.42   141236     0.00     0.00  QuasiCliqueCand::cover_vertex_pruning()
+  0.21    188.59     0.40    57003     0.00     0.00  QuasiCliqueCand::get_new_candidates(QuasiCliqueCand&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&, std::vector<bool, std::allocator<bool> >&)
+  0.16    188.89     0.30     3050     0.00     0.00  Subgraph::Subgraph(Subgraph const&, Subgraph const&)
+  0.13    189.14     0.25   639938     0.00     0.00  QuasiCliqueCand::get_cand_ext(std::vector<unsigned int, std::allocator<unsigned int> >&) const
+  0.12    189.37     0.23   271531     0.00     0.00  QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const
+  0.08    189.53     0.16 10333166     0.00     0.00  std::_Deque_base<std::pair<int, unsigned int>*, std::allocator<std::pair<int, unsigned int>*> >::_M_initialize_map(unsigned int)
+  0.08    189.69     0.16   139622     0.00     0.00  QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int)
+  0.07    189.82     0.13 13254246     0.00     0.00  QuasiCliqueCand::remove_vertex_cand_ext(unsigned int)
+  0.06    189.93     0.11   139622     0.00     0.00  QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const
+  0.05    190.03     0.10      102     0.00     1.83  QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int)
+  0.04    190.11     0.08   742689     0.00     0.00  Subgraph::get_neighbors(std::list<unsigned int, std::allocator<unsigned int> >&, unsigned int) const
+  0.04    190.19     0.08      204     0.00     0.00  StrCorrPattern::get_expected_epsilon_analytical(unsigned int)
+  0.03    190.25     0.06  1589410     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::find(std::string const&)
+  0.03    190.31     0.06   639938     0.00     0.00  void std::__introsort_loop<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int)
+  0.03    190.37     0.06   150616     0.00     0.00  Graph::get_neighborhood(unsigned int) const
+  0.03    190.42     0.05  1085682     0.00     0.00  QuasiCliqueCand::check_vertices_quasi_clique_candidate(std::vector<bool, std::allocator<bool> > const&, std::vector<unsigned int, std::allocator<unsigned int> > const&) const
+  0.03    190.47     0.05   459276     0.00     0.00  Subgraph::are_neighbors(unsigned int, unsigned int) const
+  0.02    190.51     0.04  2961844     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int)
+  0.02    190.55     0.04  1085682     0.00     0.00  QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&)
+  0.02    190.59     0.04       78     0.00     0.00  Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&)
+  0.02    190.62     0.03  1085682     0.00     0.00  QuasiCliqueCand::~QuasiCliqueCand()
+  0.02    190.65     0.03   315490     0.00     0.00  Subgraph::remove_vertex(unsigned int)
+  0.02    190.68     0.03        1     0.03   145.96  StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&)
+  0.01    190.70     0.02  7913782     0.00     0.00  compare_pairs_desc(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)
+  0.01    190.72     0.02  1589410     0.00     0.00  dict::Dictionary::get_term_id(std::string)
+  0.01    190.74     0.02  1085682     0.00     0.00  QuasiCliqueCand::QuasiCliqueCand(unsigned int, unsigned int, Subgraph const*)
+  0.01    190.76     0.02   631012     0.00     0.00  QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int)
+  0.01    190.78     0.02   610706     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, std::string const&)
+  0.01    190.80     0.02   411255     0.00     0.00  std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> >::reserve(unsigned int)
+  0.01    190.82     0.02   408333     0.00     0.00  void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*))
+  0.01    190.84     0.02   139622     0.00     0.00  QuasiCliqueCand::is_extensible(unsigned int, unsigned int) const
+  0.01    190.86     0.02   136468     0.00     0.00  split(std::string const&, char)
+  0.01    190.88     0.02        1     0.02     0.10  Graph::Graph(std::string, dict::Dictionary*)
+  0.01    190.89     0.01   876883     0.00     0.00  QuasiCliqueCand::degree_pruning_x(unsigned int)
+  0.01    190.90     0.01   150616     0.00     0.00  std::list<unsigned int, std::allocator<unsigned int> >::operator=(std::list<unsigned int, std::allocator<unsigned int> > const&)
+  0.01    190.91     0.01   136468     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::operator=(std::vector<std::string, std::allocator<std::string> > const&)
+  0.01    190.92     0.01    70689     0.00     0.00  QuasiCliqueCand::critical_vertex_pruning(unsigned int)
+  0.01    190.93     0.01     3128     0.00     0.00  Subgraph::~Subgraph()
+  0.01    190.94     0.01      963     0.00     0.00  QuasiCliqueCand::remove_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*)
+  0.01    190.95     0.01      102     0.00     0.03  QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int)
+  0.00    190.95     0.00   476091     0.00     0.00  Subgraph::degree(unsigned int) const
+  0.00    190.95     0.00   319808     0.00     0.00  std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&)
+  0.00    190.95     0.00   195208     0.00     0.00  compare_pairs(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)
+  0.00    190.95     0.00    61866     0.00     0.00  QuasiCliqueCand::is_quasi_clique_look_ahead()
+  0.00    190.95     0.00    45712     0.00     0.00  dict::Dictionary::insert_term(std::string)
+  0.00    190.95     0.00    45712     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<std::string const, unsigned int> const&)
+  0.00    190.95     0.00    45712     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<std::string const, unsigned int> >, std::pair<std::string const, unsigned int> const&)
+  0.00    190.95     0.00    34677     0.00     0.00  Graph::size() const
+  0.00    190.95     0.00    34520     0.00     0.00  Graph::get_num_neighbors(unsigned int) const
+  0.00    190.95     0.00    14124     0.00     0.00  dict::Dictionary::get_term(unsigned int)
+  0.00    190.95     0.00    13998     0.00     0.00  Subgraph::get_vertex_id(unsigned int) const
+  0.00    190.95     0.00     3508     0.00     0.00  QuasiCliqueCand::is_quasi_clique_x()
+  0.00    190.95     0.00     3128     0.00     0.00  StrCorrPattern::~StrCorrPattern()
+  0.00    190.95     0.00     3128     0.00     0.00  std::vector<std::list<unsigned int, std::allocator<unsigned int> >*, std::allocator<std::list<unsigned int, std::allocator<unsigned int> >*> >::reserve(unsigned int)
+  0.00    190.95     0.00     3050     0.00     0.00  StrCorrPattern::StrCorrPattern(StrCorrPattern*, StrCorrPattern*)
+  0.00    190.95     0.00     2655     0.00     0.00  QuasiCliqueCand::insert_vertices_x(std::vector<bool, std::allocator<bool> >&) const
+  0.00    190.95     0.00     2655     0.00     0.00  std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >::push_back(QuasiCliqueCand* const&)
+  0.00    190.95     0.00     1331     0.00     0.00  QuasiCliqueCand::insert_vertices_cand_ext(std::vector<bool, std::allocator<bool> >&) const
+  0.00    190.95     0.00      383     0.00     0.00  dict::Dictionary::size() const
+  0.00    190.95     0.00      204     0.00     0.00  std::vector<bool, std::allocator<bool> >::~vector()
+  0.00    190.95     0.00      179     0.00     0.00  Graph::get_max_degree() const
+  0.00    190.95     0.00      102     0.00     1.86  StrCorrPattern::compute_epsilon()
+  0.00    190.95     0.00      102     0.00     0.00  QuasiCliqueCand::set_min_gamma(double)
+  0.00    190.95     0.00      102     0.00     0.00  QuasiCliqueCand::get_diameter_upper_bound(unsigned int, double)
+  0.00    190.95     0.00      102     0.00     0.00  QuasiCliqueCand::set_diameter_upper_bound()
+  0.00    190.95     0.00      102     0.00     0.00  QuasiCliqueCand::set_min_size_quasi_cliques(unsigned int)
+  0.00    190.95     0.00      102     0.00     0.00  StrCorrPattern::print(std::ostream&) const
+  0.00    190.95     0.00      102     0.00     0.00  std::vector<bool, std::allocator<bool> >::reserve(unsigned int)
+  0.00    190.95     0.00       78     0.00     0.00  StrCorrPattern::StrCorrPattern(unsigned int)
+  0.00    190.95     0.00       16     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::~vector()
+  0.00    190.95     0.00        7     0.00     0.00  GetOpt::_DefValOption<int, GetOpt::_OptionT<int> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const
+  0.00    190.95     0.00        6     0.00     0.00  SCPMParameters::check()
+  0.00    190.95     0.00        4     0.00     0.00  GetOpt::Option(char, std::string const&, std::string&, char const*)
+  0.00    190.95     0.00        4     0.00     0.00  GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const
+  0.00    190.95     0.00        4     0.00     0.00  GetOpt::_DefValOption<double, GetOpt::_OptionT<double> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const
+  0.00    190.95     0.00        4     0.00     0.00  GetOpt::_OptionT<int>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const
+  0.00    190.95     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*)
+  0.00    190.95     0.00        3     0.00     0.00  GetOpt::_OptionT<std::string>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const
+  0.00    190.95     0.00        3     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, unsigned int, std::string const&)
+  0.00    190.95     0.00        2     0.00     0.00  dict::Dictionary::Dictionary()
+  0.00    190.95     0.00        2     0.00     0.00  dict::Dictionary::~Dictionary()
+  0.00    190.95     0.00        2     0.00     0.00  GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::~_DefValOption()
+  0.00    190.95     0.00        2     0.00     0.00  std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::list<unsigned int, std::allocator<unsigned int> >*, std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > > >, unsigned int, std::list<unsigned int, std::allocator<unsigned int> > const&)
+  0.00    190.95     0.00        2     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique(std::pair<std::string const, unsigned int> const&)
+  0.00    190.95     0.00        1     0.00     0.00  global constructors keyed to showUsageSCPM()
+  0.00    190.95     0.00        1     0.00     0.00  global constructors keyed to num_combinations(unsigned int, unsigned int)
+  0.00    190.95     0.00        1     0.00     0.00  global constructors keyed to compare_pairs_desc(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)
+  0.00    190.95     0.00        1     0.00     0.00  global constructors keyed to join_lists_with_positions(std::list<unsigned int, std::allocator<unsigned int> >&, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::list<unsigned int, std::allocator<unsigned int> > const&)
+  0.00    190.95     0.00        1     0.00     0.00  global constructors keyed to split(std::string const&, char)
+  0.00    190.95     0.00        1     0.00     0.00  global constructors keyed to dict::Dictionary::min_capacity
+  0.00    190.95     0.00        1     0.00     0.00  global constructors keyed to Graph::Graph()
+  0.00    190.95     0.00        1     0.00     0.00  SCPMParameters::get(int, char**)
+  0.00    190.95     0.00        1     0.00     0.00  StrCorrPattern::delete_graph()
+  0.00    190.95     0.00        1     0.00     0.00  StrCorrPattern::set_parameters(dict::Dictionary*, dict::Dictionary*, int, double, int, int, int, double, int, double, double, int, std::string)
+  0.00    190.95     0.00        1     0.00    44.99  StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&)
+  0.00    190.95     0.00        1     0.00     0.00  StrCorrPattern::set_expected_epsilon_analytical()
+  0.00    190.95     0.00        1     0.00     0.00  QuasiCliqueCand::set_search_space_strategy_dfs()
+  0.00    190.95     0.00        1     0.00     0.00  InvalidInputParameterSettingException::~InvalidInputParameterSettingException()
+  0.00    190.95     0.00        1     0.00     0.00  Graph::~Graph()
+  0.00    190.95     0.00        1     0.00     0.00  GetOpt::GetOpt_pp::~GetOpt_pp()
+  0.00    190.95     0.00        1     0.00     0.00  GetOpt::OptionPresent::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const
+  0.00    190.95     0.00        1     0.00     0.00  GetOpt::_OptionT<double>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const
+  0.00    190.95     0.00        1     0.00     0.00  std::vector<double, std::allocator<double> >::reserve(unsigned int)
+  0.00    190.95     0.00        1     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, GetOpt::OptionData>, std::_Select1st<std::pair<std::string const, GetOpt::OptionData> >, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, GetOpt::OptionData> >*)
+  0.00    190.95     0.00        1     0.00     0.00  std::_Rb_tree<char, std::pair<char const, GetOpt::OptionData>, std::_Select1st<std::pair<char const, GetOpt::OptionData> >, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<char const, GetOpt::OptionData> >*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.01% of 190.95 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00  190.95                 main [1]
+                0.03  145.93       1/1           StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+                0.00   44.99       1/1           StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+                0.00    0.00       2/2           dict::Dictionary::Dictionary() [97]
+                0.00    0.00       2/2           dict::Dictionary::~Dictionary() [98]
+                0.00    0.00       1/1           SCPMParameters::get(int, char**) [109]
+                0.00    0.00       1/6           SCPMParameters::check() [89]
+                0.00    0.00       1/1           QuasiCliqueCand::set_search_space_strategy_dfs() [113]
+                0.00    0.00       1/1           StrCorrPattern::set_parameters(dict::Dictionary*, dict::Dictionary*, int, double, int, int, int, double, int, double, double, int, std::string) [111]
+                0.00    0.00       1/1           StrCorrPattern::delete_graph() [110]
+-----------------------------------------------
+                0.00   44.67      24/102         StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+                0.00  145.17      78/102         StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[2]     99.4    0.00  189.84     102         StrCorrPattern::compute_epsilon() [2]
+                0.10  186.46     102/102         QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+                0.01    3.23     102/102         QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int) [20]
+                0.04    0.00     102/204         StrCorrPattern::get_expected_epsilon_analytical(unsigned int) [38]
+                0.00    0.00     102/963         QuasiCliqueCand::remove_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*) [49]
+                0.00    0.00     204/204         std::vector<bool, std::allocator<bool> >::~vector() [78]
+                0.00    0.00     102/102         QuasiCliqueCand::set_min_size_quasi_cliques(unsigned int) [83]
+                0.00    0.00     102/102         QuasiCliqueCand::set_diameter_upper_bound() [82]
+                0.00    0.00     102/102         QuasiCliqueCand::set_min_gamma(double) [80]
+                0.00    0.00     102/102         QuasiCliqueCand::get_diameter_upper_bound(unsigned int, double) [81]
+-----------------------------------------------
+                0.10  186.46     102/102         StrCorrPattern::compute_epsilon() [2]
+[3]     97.7    0.10  186.46     102         QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+                2.53  183.90     102/102         QuasiCliqueCand::get_vertices_in_quasi_cliques_dfs(std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<bool, std::allocator<bool> >&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [4]
+                0.02    0.00  693416/2806547376     std::vector<bool, std::allocator<bool> >::at(unsigned int) [10]
+                0.02    0.00  166355/315490      Subgraph::remove_vertex(unsigned int) [48]
+                0.00    0.00   31218/1085682     QuasiCliqueCand::QuasiCliqueCand(unsigned int, unsigned int, Subgraph const*) [43]
+                0.00    0.00     102/408333      void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+                0.00    0.00     102/411255      std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> >::reserve(unsigned int) [52]
+                0.00    0.00   31218/476091      Subgraph::degree(unsigned int) const [64]
+                0.00    0.00     102/102         std::vector<bool, std::allocator<bool> >::reserve(unsigned int) [85]
+-----------------------------------------------
+                2.53  183.90     102/102         QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+[4]     97.6    2.53  183.90     102         QuasiCliqueCand::get_vertices_in_quasi_cliques_dfs(std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<bool, std::allocator<bool> >&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [4]
+                0.04  183.85 1085682/1085682     QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+                0.00    0.00  166355/2806547376     std::vector<bool, std::allocator<bool> >::at(unsigned int) [10]
+-----------------------------------------------
+                0.04  183.85 1085682/1085682     QuasiCliqueCand::get_vertices_in_quasi_cliques_dfs(std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<bool, std::allocator<bool> >&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [4]
+[5]     96.3    0.04  183.85 1085682         QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+                0.02  182.10  631012/631012      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+                0.40    0.70   57003/57003       QuasiCliqueCand::get_new_candidates(QuasiCliqueCand&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&, std::vector<bool, std::allocator<bool> >&) [26]
+                0.00    0.52   61866/61866       QuasiCliqueCand::is_quasi_clique_look_ahead() [29]
+                0.05    0.00 1085682/1085682     QuasiCliqueCand::check_vertices_quasi_clique_candidate(std::vector<bool, std::allocator<bool> > const&, std::vector<unsigned int, std::allocator<unsigned int> > const&) const [41]
+                0.03    0.00 1083027/1085682     QuasiCliqueCand::~QuasiCliqueCand() [47]
+                0.03    0.00 4332108/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+                0.00    0.01    3508/3508        QuasiCliqueCand::is_quasi_clique_x() [58]
+                0.00    0.00    2655/2655        QuasiCliqueCand::insert_vertices_x(std::vector<bool, std::allocator<bool> >&) const [74]
+                0.00    0.00    2655/2655        std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >::push_back(QuasiCliqueCand* const&) [75]
+                0.00    0.00    1331/1331        QuasiCliqueCand::insert_vertices_cand_ext(std::vector<bool, std::allocator<bool> >&) const [76]
+-----------------------------------------------
+                0.02  182.10  631012/631012      QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[6]     95.4    0.02  182.10  631012         QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+                0.70  117.67  364960/364960      QuasiCliqueCand::degree_pruning_cand_ext(unsigned int) [9]
+                3.34   17.31  212514/212514      QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&) [12]
+                0.16   14.51  139622/139622      QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int) [13]
+                0.01   12.92  876883/876883      QuasiCliqueCand::degree_pruning_x(unsigned int) [15]
+                0.11    5.24  139622/139622      QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const [18]
+                0.01    2.83   70689/70689       QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                0.02    2.73  139622/139622      QuasiCliqueCand::is_extensible(unsigned int, unsigned int) const [23]
+                0.42    2.21  141236/141236      QuasiCliqueCand::cover_vertex_pruning() [24]
+                0.18    1.73  210311/271531      QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const [25]
+-----------------------------------------------
+                0.27    0.22   88616/26640975     QuasiCliqueCand::is_quasi_clique_look_ahead() [29]
+                1.16    0.95  385787/26640975     QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                1.35    1.10  448574/26640975     QuasiCliqueCand::is_extensible(unsigned int, unsigned int) const [23]
+                2.20    1.80  729033/26640975     QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const [18]
+                6.73    5.49 2227512/26640975     QuasiCliqueCand::degree_pruning_x(unsigned int) [15]
+                7.53    6.14 2493580/26640975     QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int) [13]
+               61.20   49.92 20267873/26640975     QuasiCliqueCand::degree_pruning_cand_ext(unsigned int) [9]
+[7]     76.5   80.45   65.61 26640975         QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+               65.61    0.00 2560839398/2806547376     std::vector<bool, std::allocator<bool> >::at(unsigned int) [10]
+-----------------------------------------------
+                0.03  145.93       1/1           main [1]
+[8]     76.4    0.03  145.93       1         StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+                0.00  145.17      78/102         StrCorrPattern::compute_epsilon() [2]
+                0.02    0.45 1391750/1589410     dict::Dictionary::get_term_id(std::string) [27]
+                0.04    0.07      78/78          Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [35]
+                0.02    0.08       1/1           Graph::Graph(std::string, dict::Dictionary*) [36]
+                0.03    0.00      78/204         StrCorrPattern::get_expected_epsilon_analytical(unsigned int) [38]
+                0.02    0.02  103560/136468      split(std::string const&, char) [46]
+                0.00    0.01   45712/45712       dict::Dictionary::insert_term(std::string) [53]
+                0.01    0.00  103560/136468      std::vector<std::string, std::allocator<std::string> >::operator=(std::vector<std::string, std::allocator<std::string> > const&) [56]
+                0.00    0.00      78/78          StrCorrPattern::StrCorrPattern(unsigned int) [86]
+                0.00    0.00      78/102         StrCorrPattern::print(std::ostream&) const [84]
+                0.00    0.00       1/2           std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::list<unsigned int, std::allocator<unsigned int> >*, std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > > >, unsigned int, std::list<unsigned int, std::allocator<unsigned int> > const&) [100]
+                0.00    0.00       1/1           StrCorrPattern::set_expected_epsilon_analytical() [112]
+-----------------------------------------------
+                0.70  117.67  364960/364960      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[9]     62.0    0.70  117.67  364960         QuasiCliqueCand::degree_pruning_cand_ext(unsigned int) [9]
+               61.20   49.92 20267873/26640975     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+                4.17    1.90 20267873/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.46    0.00 78555901/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+                0.01    0.01  608054/13254246     QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [33]
+-----------------------------------------------
+                0.00    0.00  166355/2806547376     QuasiCliqueCand::get_vertices_in_quasi_cliques_dfs(std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<bool, std::allocator<bool> >&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [4]
+                0.02    0.00  693416/2806547376     QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+                0.05    0.00 2088424/2806547376     QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int) [20]
+                2.17    0.00 84656075/2806547376     QuasiCliqueCand::identify_vertices_not_in_quasi_cliques_neighborhood(Subgraph const*, std::vector<bool, std::allocator<bool> > const*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int) [21]
+                4.05    0.00 158103708/2806547376     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+               65.61    0.00 2560839398/2806547376     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+[10]    37.7   71.91    0.00 2806547376         std::vector<bool, std::allocator<bool> >::at(unsigned int) [10]
+-----------------------------------------------
+                                   8             StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+                0.00   44.99       1/1           main [1]
+[11]    23.6    0.00   44.99       1+8       StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+                0.00   44.67      24/102         StrCorrPattern::compute_epsilon() [2]
+                0.30    0.00    3050/3050        Subgraph::Subgraph(Subgraph const&, Subgraph const&) [32]
+                0.00    0.01    3128/3128        StrCorrPattern::~StrCorrPattern() [54]
+                0.01    0.00      24/204         StrCorrPattern::get_expected_epsilon_analytical(unsigned int) [38]
+                0.00    0.00    3050/3050        StrCorrPattern::StrCorrPattern(StrCorrPattern*, StrCorrPattern*) [59]
+                0.00    0.00      24/102         StrCorrPattern::print(std::ostream&) const [84]
+                                   8             StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+-----------------------------------------------
+                3.34   17.31  212514/212514      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[12]    10.8    3.34   17.31  212514         QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&) [12]
+                6.24    0.00 1056252524/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+                5.60    0.13 4195944/4227162     Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*, unsigned int) const [17]
+                5.07    0.03  939421/939421      Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*) const [19]
+                0.11    0.14 11440342/13254246     QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [33]
+-----------------------------------------------
+                0.16   14.51  139622/139622      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[13]     7.7    0.16   14.51  139622         QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int) [13]
+                7.53    6.14 2493580/26640975     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+                0.51    0.23 2493580/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.07    0.00 11694475/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+                0.01    0.01 1083782/13254246     QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [33]
+-----------------------------------------------
+                0.00    0.00   20860/43152246     QuasiCliqueCand::is_quasi_clique_x() [58]
+                0.02    0.01   88616/43152246     QuasiCliqueCand::is_quasi_clique_look_ahead() [29]
+                0.08    0.04  385787/43152246     QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                0.19    0.09  915154/43152246     QuasiCliqueCand::is_extensible(unsigned int, unsigned int) const [23]
+                0.46    0.21 2227512/43152246     QuasiCliqueCand::degree_pruning_x(unsigned int) [15]
+                0.51    0.23 2493580/43152246     QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int) [13]
+                0.84    0.38 4078987/43152246     QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const [18]
+                1.10    0.50 5347343/43152246     QuasiCliqueCand::cover_vertex_pruning() [24]
+                1.51    0.69 7326534/43152246     QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const [25]
+                4.17    1.90 20267873/43152246     QuasiCliqueCand::degree_pruning_cand_ext(unsigned int) [9]
+[14]     6.8    8.88    4.05 43152246         QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                4.05    0.00 158103708/2806547376     std::vector<bool, std::allocator<bool> >::at(unsigned int) [10]
+-----------------------------------------------
+                0.01   12.92  876883/876883      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[15]     6.8    0.01   12.92  876883         QuasiCliqueCand::degree_pruning_x(unsigned int) [15]
+                6.73    5.49 2227512/26640975     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+                0.46    0.21 2227512/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.04    0.00 6682536/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+-----------------------------------------------
+                0.00    0.00   41720/1327837020     QuasiCliqueCand::is_quasi_clique_x() [58]
+                0.00    0.00  484777/1327837020     QuasiCliqueCand::is_quasi_clique_look_ahead() [29]
+                0.03    0.00 4332108/1327837020     QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+                0.04    0.00 6129288/1327837020     QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                0.04    0.00 6682536/1327837020     QuasiCliqueCand::degree_pruning_x(unsigned int) [15]
+                0.07    0.00 11694475/1327837020     QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int) [13]
+                0.16    0.00 26367369/1327837020     QuasiCliqueCand::cover_vertex_pruning() [24]
+                0.16    0.00 26508492/1327837020     QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [33]
+                0.46    0.00 78555901/1327837020     QuasiCliqueCand::degree_pruning_cand_ext(unsigned int) [9]
+                0.65    0.00 110787830/1327837020     QuasiCliqueCand::get_new_candidates(QuasiCliqueCand&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&, std::vector<bool, std::allocator<bool> >&) [26]
+                6.24    0.00 1056252524/1327837020     QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&) [12]
+[16]     4.1    7.84    0.00 1327837020         std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+-----------------------------------------------
+                0.04    0.00   31218/4227162     QuasiCliqueCand::identify_vertices_not_in_quasi_cliques_neighborhood(Subgraph const*, std::vector<bool, std::allocator<bool> > const*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int) [21]
+                5.60    0.13 4195944/4227162     QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&) [12]
+[17]     3.0    5.64    0.13 4227162         Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*, unsigned int) const [17]
+                0.13    0.00 8454324/10333166     std::_Deque_base<std::pair<int, unsigned int>*, std::allocator<std::pair<int, unsigned int>*> >::_M_initialize_map(unsigned int) [34]
+-----------------------------------------------
+                0.11    5.24  139622/139622      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[18]     2.8    0.11    5.24  139622         QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const [18]
+                2.20    1.80  729033/26640975     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+                0.84    0.38 4078987/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.01    0.01  139622/408333      void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+                0.01    0.00  139622/411255      std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> >::reserve(unsigned int) [52]
+-----------------------------------------------
+                5.07    0.03  939421/939421      QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&) [12]
+[19]     2.7    5.07    0.03  939421         Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*) const [19]
+                0.03    0.00 1878842/10333166     std::_Deque_base<std::pair<int, unsigned int>*, std::allocator<std::pair<int, unsigned int>*> >::_M_initialize_map(unsigned int) [34]
+-----------------------------------------------
+                0.01    3.23     102/102         StrCorrPattern::compute_epsilon() [2]
+[20]     1.7    0.01    3.23     102         QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int) [20]
+                0.94    2.21     102/102         QuasiCliqueCand::identify_vertices_not_in_quasi_cliques_neighborhood(Subgraph const*, std::vector<bool, std::allocator<bool> > const*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int) [21]
+                0.05    0.00 2088424/2806547376     std::vector<bool, std::allocator<bool> >::at(unsigned int) [10]
+                0.01    0.01     861/963         QuasiCliqueCand::remove_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*) [49]
+                0.00    0.00  444873/476091      Subgraph::degree(unsigned int) const [64]
+-----------------------------------------------
+                0.94    2.21     102/102         QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int) [20]
+[21]     1.7    0.94    2.21     102         QuasiCliqueCand::identify_vertices_not_in_quasi_cliques_neighborhood(Subgraph const*, std::vector<bool, std::allocator<bool> > const*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int) [21]
+                2.17    0.00 84656075/2806547376     std::vector<bool, std::allocator<bool> >::at(unsigned int) [10]
+                0.04    0.00   31218/4227162     Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*, unsigned int) const [17]
+-----------------------------------------------
+                0.01    2.83   70689/70689       QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[22]     1.5    0.01    2.83   70689         QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                1.16    0.95  385787/26640975     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+                0.05    0.50   61220/271531      QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const [25]
+                0.08    0.04  385787/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.04    0.00 6129288/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+                0.00    0.00   41238/742689      Subgraph::get_neighbors(std::list<unsigned int, std::allocator<unsigned int> >&, unsigned int) const [37]
+                0.00    0.00   61220/13254246     QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [33]
+                0.00    0.00    4107/319808      std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [65]
+-----------------------------------------------
+                0.02    2.73  139622/139622      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[23]     1.4    0.02    2.73  139622         QuasiCliqueCand::is_extensible(unsigned int, unsigned int) const [23]
+                1.35    1.10  448574/26640975     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+                0.19    0.09  915154/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+-----------------------------------------------
+                0.42    2.21  141236/141236      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[24]     1.4    0.42    2.21  141236         QuasiCliqueCand::cover_vertex_pruning() [24]
+                1.10    0.50 5347343/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.25    0.07  639938/639938      QuasiCliqueCand::get_cand_ext(std::vector<unsigned int, std::allocator<unsigned int> >&) const [31]
+                0.16    0.00 26367369/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+                0.08    0.00  701451/742689      Subgraph::get_neighbors(std::list<unsigned int, std::allocator<unsigned int> >&, unsigned int) const [37]
+                0.05    0.00  459276/459276      Subgraph::are_neighbors(unsigned int, unsigned int) const [42]
+                0.00    0.00  141236/2961844     std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int) [44]
+                0.00    0.00   60848/13254246     QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [33]
+-----------------------------------------------
+                0.05    0.50   61220/271531      QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                0.18    1.73  210311/271531      QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [6]
+[25]     1.3    0.23    2.23  271531         QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const [25]
+                1.51    0.69 7326534/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.01    0.01  268609/408333      void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+                0.01    0.00  271531/411255      std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> >::reserve(unsigned int) [52]
+-----------------------------------------------
+                0.40    0.70   57003/57003       QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[26]     0.6    0.40    0.70   57003         QuasiCliqueCand::get_new_candidates(QuasiCliqueCand&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&, std::vector<bool, std::allocator<bool> >&) [26]
+                0.65    0.00 110787830/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+                0.02    0.03 1054464/1085682     QuasiCliqueCand::QuasiCliqueCand(unsigned int, unsigned int, Subgraph const*) [43]
+                0.00    0.00   22065/319808      std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [65]
+-----------------------------------------------
+                0.00    0.06  197660/1589410     Graph::Graph(std::string, dict::Dictionary*) [36]
+                0.02    0.45 1391750/1589410     StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[27]     0.3    0.02    0.52 1589410         dict::Dictionary::get_term_id(std::string) [27]
+                0.06    0.46 1589410/1589410     std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::find(std::string const&) [28]
+-----------------------------------------------
+                0.06    0.46 1589410/1589410     dict::Dictionary::get_term_id(std::string) [27]
+[28]     0.3    0.06    0.46 1589410         std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::find(std::string const&) [28]
+                0.46    0.00 1589410/1635122     std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::string const&) [30]
+-----------------------------------------------
+                0.00    0.52   61866/61866       QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[29]     0.3    0.00    0.52   61866         QuasiCliqueCand::is_quasi_clique_look_ahead() [29]
+                0.27    0.22   88616/26640975     QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [7]
+                0.02    0.01   88616/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.00    0.00  484777/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+-----------------------------------------------
+                0.01    0.00   45712/1635122     dict::Dictionary::insert_term(std::string) [53]
+                0.46    0.00 1589410/1635122     std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::find(std::string const&) [28]
+[30]     0.2    0.47    0.00 1635122         std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::string const&) [30]
+-----------------------------------------------
+                0.25    0.07  639938/639938      QuasiCliqueCand::cover_vertex_pruning() [24]
+[31]     0.2    0.25    0.07  639938         QuasiCliqueCand::get_cand_ext(std::vector<unsigned int, std::allocator<unsigned int> >&) const [31]
+                0.06    0.00  639938/639938      void std::__introsort_loop<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int) [39]
+                0.01    0.00  639938/2961844     std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int) [44]
+                0.00    0.00  293558/319808      std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [65]
+-----------------------------------------------
+                0.30    0.00    3050/3050        StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+[32]     0.2    0.30    0.00    3050         Subgraph::Subgraph(Subgraph const&, Subgraph const&) [32]
+                0.00    0.00    6100/2961844     std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int) [44]
+                0.00    0.00    3050/3128        std::vector<std::list<unsigned int, std::allocator<unsigned int> >*, std::allocator<std::list<unsigned int, std::allocator<unsigned int> >*> >::reserve(unsigned int) [73]
+-----------------------------------------------
+                0.00    0.00   60848/13254246     QuasiCliqueCand::cover_vertex_pruning() [24]
+                0.00    0.00   61220/13254246     QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                0.01    0.01  608054/13254246     QuasiCliqueCand::degree_pruning_cand_ext(unsigned int) [9]
+                0.01    0.01 1083782/13254246     QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int) [13]
+                0.11    0.14 11440342/13254246     QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&) [12]
+[33]     0.2    0.13    0.16 13254246         QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [33]
+                0.16    0.00 26508492/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+-----------------------------------------------
+                0.03    0.00 1878842/10333166     Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*) const [19]
+                0.13    0.00 8454324/10333166     Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*, unsigned int) const [17]
+[34]     0.1    0.16    0.00 10333166         std::_Deque_base<std::pair<int, unsigned int>*, std::allocator<std::pair<int, unsigned int>*> >::_M_initialize_map(unsigned int) [34]
+-----------------------------------------------
+                0.04    0.07      78/78          StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[35]     0.1    0.04    0.07      78         Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [35]
+                0.06    0.00  150616/150616      Graph::get_neighborhood(unsigned int) const [40]
+                0.01    0.00  150616/150616      std::list<unsigned int, std::allocator<unsigned int> >::operator=(std::list<unsigned int, std::allocator<unsigned int> > const&) [55]
+                0.00    0.00     156/2961844     std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int) [44]
+                0.00    0.00     156/34677       Graph::size() const [69]
+                0.00    0.00      78/3128        std::vector<std::list<unsigned int, std::allocator<unsigned int> >*, std::allocator<std::list<unsigned int, std::allocator<unsigned int> >*> >::reserve(unsigned int) [73]
+-----------------------------------------------
+                0.02    0.08       1/1           StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[36]     0.1    0.02    0.08       1         Graph::Graph(std::string, dict::Dictionary*) [36]
+                0.00    0.06  197660/1589410     dict::Dictionary::get_term_id(std::string) [27]
+                0.00    0.00   32908/136468      split(std::string const&, char) [46]
+                0.00    0.00   32908/136468      std::vector<std::string, std::allocator<std::string> >::operator=(std::vector<std::string, std::allocator<std::string> > const&) [56]
+                0.00    0.00       2/383         dict::Dictionary::size() const [77]
+                0.00    0.00       1/2           std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::list<unsigned int, std::allocator<unsigned int> >*, std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > > >, unsigned int, std::list<unsigned int, std::allocator<unsigned int> > const&) [100]
+-----------------------------------------------
+                0.00    0.00   41238/742689      QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                0.08    0.00  701451/742689      QuasiCliqueCand::cover_vertex_pruning() [24]
+[37]     0.0    0.08    0.00  742689         Subgraph::get_neighbors(std::list<unsigned int, std::allocator<unsigned int> >&, unsigned int) const [37]
+-----------------------------------------------
+                0.01    0.00      24/204         StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+                0.03    0.00      78/204         StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+                0.04    0.00     102/204         StrCorrPattern::compute_epsilon() [2]
+[38]     0.0    0.08    0.00     204         StrCorrPattern::get_expected_epsilon_analytical(unsigned int) [38]
+                0.00    0.00     204/383         dict::Dictionary::size() const [77]
+-----------------------------------------------
+                              607733             void std::__introsort_loop<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int) [39]
+                0.06    0.00  639938/639938      QuasiCliqueCand::get_cand_ext(std::vector<unsigned int, std::allocator<unsigned int> >&) const [31]
+[39]     0.0    0.06    0.00  639938+607733  void std::__introsort_loop<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int) [39]
+                              607733             void std::__introsort_loop<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int) [39]
+-----------------------------------------------
+                0.06    0.00  150616/150616      Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [35]
+[40]     0.0    0.06    0.00  150616         Graph::get_neighborhood(unsigned int) const [40]
+-----------------------------------------------
+                0.05    0.00 1085682/1085682     QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[41]     0.0    0.05    0.00 1085682         QuasiCliqueCand::check_vertices_quasi_clique_candidate(std::vector<bool, std::allocator<bool> > const&, std::vector<unsigned int, std::allocator<unsigned int> > const&) const [41]
+-----------------------------------------------
+                0.05    0.00  459276/459276      QuasiCliqueCand::cover_vertex_pruning() [24]
+[42]     0.0    0.05    0.00  459276         Subgraph::are_neighbors(unsigned int, unsigned int) const [42]
+-----------------------------------------------
+                0.00    0.00   31218/1085682     QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+                0.02    0.03 1054464/1085682     QuasiCliqueCand::get_new_candidates(QuasiCliqueCand&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&, std::vector<bool, std::allocator<bool> >&) [26]
+[43]     0.0    0.02    0.03 1085682         QuasiCliqueCand::QuasiCliqueCand(unsigned int, unsigned int, Subgraph const*) [43]
+                0.03    0.00 2171364/2961844     std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int) [44]
+-----------------------------------------------
+                0.00    0.00     156/2961844     Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [35]
+                0.00    0.00    3050/2961844     StrCorrPattern::StrCorrPattern(StrCorrPattern*, StrCorrPattern*) [59]
+                0.00    0.00    6100/2961844     Subgraph::Subgraph(Subgraph const&, Subgraph const&) [32]
+                0.00    0.00  141236/2961844     QuasiCliqueCand::cover_vertex_pruning() [24]
+                0.01    0.00  639938/2961844     QuasiCliqueCand::get_cand_ext(std::vector<unsigned int, std::allocator<unsigned int> >&) const [31]
+                0.03    0.00 2171364/2961844     QuasiCliqueCand::QuasiCliqueCand(unsigned int, unsigned int, Subgraph const*) [43]
+[44]     0.0    0.04    0.00 2961844         std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int) [44]
+-----------------------------------------------
+                              260965             void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+                0.00    0.00     102/408333      QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+                0.01    0.01  139622/408333      QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const [18]
+                0.01    0.01  268609/408333      QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const [25]
+[45]     0.0    0.02    0.02  408333+260965  void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+                0.02    0.00 7913782/7913782     compare_pairs_desc(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) [50]
+                0.00    0.00  195208/195208      compare_pairs(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) [66]
+                              260965             void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+-----------------------------------------------
+                0.00    0.00   32908/136468      Graph::Graph(std::string, dict::Dictionary*) [36]
+                0.02    0.02  103560/136468      StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[46]     0.0    0.02    0.02  136468         split(std::string const&, char) [46]
+                0.02    0.00  610698/610706      std::vector<std::string, std::allocator<std::string> >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, std::string const&) [51]
+-----------------------------------------------
+                0.00    0.00    2655/1085682     StrCorrPattern::~StrCorrPattern() [54]
+                0.03    0.00 1083027/1085682     QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[47]     0.0    0.03    0.00 1085682         QuasiCliqueCand::~QuasiCliqueCand() [47]
+-----------------------------------------------
+                0.01    0.00  149135/315490      QuasiCliqueCand::remove_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*) [49]
+                0.02    0.00  166355/315490      QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+[48]     0.0    0.03    0.00  315490         Subgraph::remove_vertex(unsigned int) [48]
+-----------------------------------------------
+                0.00    0.00     102/963         StrCorrPattern::compute_epsilon() [2]
+                0.01    0.01     861/963         QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int) [20]
+[49]     0.0    0.01    0.01     963         QuasiCliqueCand::remove_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*) [49]
+                0.01    0.00  149135/315490      Subgraph::remove_vertex(unsigned int) [48]
+-----------------------------------------------
+                0.02    0.00 7913782/7913782     void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+[50]     0.0    0.02    0.00 7913782         compare_pairs_desc(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) [50]
+-----------------------------------------------
+                0.00    0.00       8/610706      std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [60]
+                0.02    0.00  610698/610706      split(std::string const&, char) [46]
+[51]     0.0    0.02    0.00  610706         std::vector<std::string, std::allocator<std::string> >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, std::string const&) [51]
+-----------------------------------------------
+                0.00    0.00     102/411255      QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+                0.01    0.00  139622/411255      QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const [18]
+                0.01    0.00  271531/411255      QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const [25]
+[52]     0.0    0.02    0.00  411255         std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> >::reserve(unsigned int) [52]
+-----------------------------------------------
+                0.00    0.01   45712/45712       StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[53]     0.0    0.00    0.01   45712         dict::Dictionary::insert_term(std::string) [53]
+                0.01    0.00   45712/1635122     std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::string const&) [30]
+                0.00    0.00   45712/45712       std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<std::string const, unsigned int> >, std::pair<std::string const, unsigned int> const&) [68]
+                0.00    0.00       1/3           std::vector<std::string, std::allocator<std::string> >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, unsigned int, std::string const&) [96]
+-----------------------------------------------
+                0.00    0.01    3128/3128        StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+[54]     0.0    0.00    0.01    3128         StrCorrPattern::~StrCorrPattern() [54]
+                0.01    0.00    3128/3128        Subgraph::~Subgraph() [57]
+                0.00    0.00    2655/1085682     QuasiCliqueCand::~QuasiCliqueCand() [47]
+-----------------------------------------------
+                0.01    0.00  150616/150616      Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [35]
+[55]     0.0    0.01    0.00  150616         std::list<unsigned int, std::allocator<unsigned int> >::operator=(std::list<unsigned int, std::allocator<unsigned int> > const&) [55]
+-----------------------------------------------
+                0.00    0.00   32908/136468      Graph::Graph(std::string, dict::Dictionary*) [36]
+                0.01    0.00  103560/136468      StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[56]     0.0    0.01    0.00  136468         std::vector<std::string, std::allocator<std::string> >::operator=(std::vector<std::string, std::allocator<std::string> > const&) [56]
+-----------------------------------------------
+                0.01    0.00    3128/3128        StrCorrPattern::~StrCorrPattern() [54]
+[57]     0.0    0.01    0.00    3128         Subgraph::~Subgraph() [57]
+-----------------------------------------------
+                0.00    0.01    3508/3508        QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[58]     0.0    0.00    0.01    3508         QuasiCliqueCand::is_quasi_clique_x() [58]
+                0.00    0.00   20860/43152246     QuasiCliqueCand::get_degree_x(unsigned int) const [14]
+                0.00    0.00   41720/1327837020     std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int) [16]
+-----------------------------------------------
+                0.00    0.00    3050/3050        StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+[59]     0.0    0.00    0.00    3050         StrCorrPattern::StrCorrPattern(StrCorrPattern*, StrCorrPattern*) [59]
+                0.00    0.00    3050/2961844     std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int) [44]
+-----------------------------------------------
+                                                 <spontaneous>
+[60]     0.0    0.00    0.00                 std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [60]
+                0.00    0.00       8/610706      std::vector<std::string, std::allocator<std::string> >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, std::string const&) [51]
+-----------------------------------------------
+                0.00    0.00   31218/476091      QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+                0.00    0.00  444873/476091      QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int) [20]
+[64]     0.0    0.00    0.00  476091         Subgraph::degree(unsigned int) const [64]
+-----------------------------------------------
+                0.00    0.00      78/319808      StrCorrPattern::StrCorrPattern(unsigned int) [86]
+                0.00    0.00    4107/319808      QuasiCliqueCand::critical_vertex_pruning(unsigned int) [22]
+                0.00    0.00   22065/319808      QuasiCliqueCand::get_new_candidates(QuasiCliqueCand&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&, std::vector<bool, std::allocator<bool> >&) [26]
+                0.00    0.00  293558/319808      QuasiCliqueCand::get_cand_ext(std::vector<unsigned int, std::allocator<unsigned int> >&) const [31]
+[65]     0.0    0.00    0.00  319808         std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [65]
+-----------------------------------------------
+                0.00    0.00  195208/195208      void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)) [45]
+[66]     0.0    0.00    0.00  195208         compare_pairs(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) [66]
+-----------------------------------------------
+                0.00    0.00       2/45712       std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique(std::pair<std::string const, unsigned int> const&) [101]
+                0.00    0.00   45710/45712       std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<std::string const, unsigned int> >, std::pair<std::string const, unsigned int> const&) [68]
+[67]     0.0    0.00    0.00   45712         std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<std::string const, unsigned int> const&) [67]
+-----------------------------------------------
+                0.00    0.00   45712/45712       dict::Dictionary::insert_term(std::string) [53]
+[68]     0.0    0.00    0.00   45712         std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<std::string const, unsigned int> >, std::pair<std::string const, unsigned int> const&) [68]
+                0.00    0.00   45710/45712       std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<std::string const, unsigned int> const&) [67]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique(std::pair<std::string const, unsigned int> const&) [101]
+-----------------------------------------------
+                0.00    0.00     156/34677       Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [35]
+                0.00    0.00   34521/34677       StrCorrPattern::set_expected_epsilon_analytical() [112]
+[69]     0.0    0.00    0.00   34677         Graph::size() const [69]
+-----------------------------------------------
+                0.00    0.00   34520/34520       StrCorrPattern::set_expected_epsilon_analytical() [112]
+[70]     0.0    0.00    0.00   34520         Graph::get_num_neighbors(unsigned int) const [70]
+-----------------------------------------------
+                0.00    0.00   14124/14124       StrCorrPattern::print(std::ostream&) const [84]
+[71]     0.0    0.00    0.00   14124         dict::Dictionary::get_term(unsigned int) [71]
+-----------------------------------------------
+                0.00    0.00   13998/13998       StrCorrPattern::print(std::ostream&) const [84]
+[72]     0.0    0.00    0.00   13998         Subgraph::get_vertex_id(unsigned int) const [72]
+-----------------------------------------------
+                0.00    0.00      78/3128        Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [35]
+                0.00    0.00    3050/3128        Subgraph::Subgraph(Subgraph const&, Subgraph const&) [32]
+[73]     0.0    0.00    0.00    3128         std::vector<std::list<unsigned int, std::allocator<unsigned int> >*, std::allocator<std::list<unsigned int, std::allocator<unsigned int> >*> >::reserve(unsigned int) [73]
+-----------------------------------------------
+                0.00    0.00    2655/2655        QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[74]     0.0    0.00    0.00    2655         QuasiCliqueCand::insert_vertices_x(std::vector<bool, std::allocator<bool> >&) const [74]
+-----------------------------------------------
+                0.00    0.00    2655/2655        QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[75]     0.0    0.00    0.00    2655         std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >::push_back(QuasiCliqueCand* const&) [75]
+-----------------------------------------------
+                0.00    0.00    1331/1331        QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [5]
+[76]     0.0    0.00    0.00    1331         QuasiCliqueCand::insert_vertices_cand_ext(std::vector<bool, std::allocator<bool> >&) const [76]
+-----------------------------------------------
+                0.00    0.00       2/383         Graph::Graph(std::string, dict::Dictionary*) [36]
+                0.00    0.00     177/383         StrCorrPattern::set_expected_epsilon_analytical() [112]
+                0.00    0.00     204/383         StrCorrPattern::get_expected_epsilon_analytical(unsigned int) [38]
+[77]     0.0    0.00    0.00     383         dict::Dictionary::size() const [77]
+-----------------------------------------------
+                0.00    0.00     204/204         StrCorrPattern::compute_epsilon() [2]
+[78]     0.0    0.00    0.00     204         std::vector<bool, std::allocator<bool> >::~vector() [78]
+-----------------------------------------------
+                0.00    0.00     179/179         StrCorrPattern::set_expected_epsilon_analytical() [112]
+[79]     0.0    0.00    0.00     179         Graph::get_max_degree() const [79]
+-----------------------------------------------
+                0.00    0.00     102/102         StrCorrPattern::compute_epsilon() [2]
+[80]     0.0    0.00    0.00     102         QuasiCliqueCand::set_min_gamma(double) [80]
+-----------------------------------------------
+                0.00    0.00     102/102         StrCorrPattern::compute_epsilon() [2]
+[81]     0.0    0.00    0.00     102         QuasiCliqueCand::get_diameter_upper_bound(unsigned int, double) [81]
+-----------------------------------------------
+                0.00    0.00     102/102         StrCorrPattern::compute_epsilon() [2]
+[82]     0.0    0.00    0.00     102         QuasiCliqueCand::set_diameter_upper_bound() [82]
+-----------------------------------------------
+                0.00    0.00     102/102         StrCorrPattern::compute_epsilon() [2]
+[83]     0.0    0.00    0.00     102         QuasiCliqueCand::set_min_size_quasi_cliques(unsigned int) [83]
+-----------------------------------------------
+                0.00    0.00      24/102         StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [11]
+                0.00    0.00      78/102         StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[84]     0.0    0.00    0.00     102         StrCorrPattern::print(std::ostream&) const [84]
+                0.00    0.00   14124/14124       dict::Dictionary::get_term(unsigned int) [71]
+                0.00    0.00   13998/13998       Subgraph::get_vertex_id(unsigned int) const [72]
+-----------------------------------------------
+                0.00    0.00     102/102         QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [3]
+[85]     0.0    0.00    0.00     102         std::vector<bool, std::allocator<bool> >::reserve(unsigned int) [85]
+-----------------------------------------------
+                0.00    0.00      78/78          StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[86]     0.0    0.00    0.00      78         StrCorrPattern::StrCorrPattern(unsigned int) [86]
+                0.00    0.00      78/319808      std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&) [65]
+-----------------------------------------------
+                0.00    0.00      16/16          GetOpt::OptionData::~OptionData() [203]
+[87]     0.0    0.00    0.00      16         std::vector<std::string, std::allocator<std::string> >::~vector() [87]
+-----------------------------------------------
+                0.00    0.00       7/7           GetOpt::GetOpt_pp::operator>>(GetOpt::_Option const&) [253]
+[88]     0.0    0.00    0.00       7         GetOpt::_DefValOption<int, GetOpt::_OptionT<int> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [88]
+                0.00    0.00       4/4           GetOpt::_OptionT<int>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [93]
+-----------------------------------------------
+                0.00    0.00       1/6           main [1]
+                0.00    0.00       1/6           GetOpt::_OptionT<double>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [118]
+                0.00    0.00       4/6           GetOpt::_OptionT<int>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [93]
+[89]     0.0    0.00    0.00       6         SCPMParameters::check() [89]
+                0.00    0.00       1/1           InvalidInputParameterSettingException::~InvalidInputParameterSettingException() [114]
+-----------------------------------------------
+                0.00    0.00       4/4           SCPMParameters::get(int, char**) [109]
+[90]     0.0    0.00    0.00       4         GetOpt::Option(char, std::string const&, std::string&, char const*) [90]
+-----------------------------------------------
+                0.00    0.00       4/4           GetOpt::GetOpt_pp::operator>>(GetOpt::_Option const&) [253]
+[91]     0.0    0.00    0.00       4         GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [91]
+                0.00    0.00       3/3           GetOpt::_OptionT<std::string>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [95]
+-----------------------------------------------
+                0.00    0.00       4/4           GetOpt::GetOpt_pp::operator>>(GetOpt::_Option const&) [253]
+[92]     0.0    0.00    0.00       4         GetOpt::_DefValOption<double, GetOpt::_OptionT<double> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [92]
+                0.00    0.00       1/1           GetOpt::_OptionT<double>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [118]
+-----------------------------------------------
+                0.00    0.00       4/4           GetOpt::_DefValOption<int, GetOpt::_OptionT<int> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [88]
+[93]     0.0    0.00    0.00       4         GetOpt::_OptionT<int>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [93]
+                0.00    0.00       4/6           SCPMParameters::check() [89]
+-----------------------------------------------
+                                6094             std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*) [94]
+                0.00    0.00       4/4           dict::Dictionary::~Dictionary() [98]
+[94]     0.0    0.00    0.00       4+6094    std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*) [94]
+                                6094             std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*) [94]
+-----------------------------------------------
+                0.00    0.00       3/3           GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [91]
+[95]     0.0    0.00    0.00       3         GetOpt::_OptionT<std::string>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [95]
+-----------------------------------------------
+                0.00    0.00       1/3           dict::Dictionary::insert_term(std::string) [53]
+                0.00    0.00       2/3           dict::Dictionary::Dictionary() [97]
+[96]     0.0    0.00    0.00       3         std::vector<std::string, std::allocator<std::string> >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, unsigned int, std::string const&) [96]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[97]     0.0    0.00    0.00       2         dict::Dictionary::Dictionary() [97]
+                0.00    0.00       2/3           std::vector<std::string, std::allocator<std::string> >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, unsigned int, std::string const&) [96]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[98]     0.0    0.00    0.00       2         dict::Dictionary::~Dictionary() [98]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*) [94]
+-----------------------------------------------
+                0.00    0.00       2/2           SCPMParameters::get(int, char**) [109]
+[99]     0.0    0.00    0.00       2         GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::~_DefValOption() [99]
+-----------------------------------------------
+                0.00    0.00       1/2           StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+                0.00    0.00       1/2           Graph::Graph(std::string, dict::Dictionary*) [36]
+[100]    0.0    0.00    0.00       2         std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::list<unsigned int, std::allocator<unsigned int> >*, std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > > >, unsigned int, std::list<unsigned int, std::allocator<unsigned int> > const&) [100]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<std::string const, unsigned int> >, std::pair<std::string const, unsigned int> const&) [68]
+[101]    0.0    0.00    0.00       2         std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique(std::pair<std::string const, unsigned int> const&) [101]
+                0.00    0.00       2/45712       std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<std::string const, unsigned int> const&) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [539]
+[102]    0.0    0.00    0.00       1         global constructors keyed to showUsageSCPM() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [539]
+[103]    0.0    0.00    0.00       1         global constructors keyed to num_combinations(unsigned int, unsigned int) [103]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [539]
+[104]    0.0    0.00    0.00       1         global constructors keyed to compare_pairs_desc(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [539]
+[105]    0.0    0.00    0.00       1         global constructors keyed to join_lists_with_positions(std::list<unsigned int, std::allocator<unsigned int> >&, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [105]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [539]
+[106]    0.0    0.00    0.00       1         global constructors keyed to split(std::string const&, char) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [539]
+[107]    0.0    0.00    0.00       1         global constructors keyed to dict::Dictionary::min_capacity [107]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [539]
+[108]    0.0    0.00    0.00       1         global constructors keyed to Graph::Graph() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[109]    0.0    0.00    0.00       1         SCPMParameters::get(int, char**) [109]
+                0.00    0.00       4/4           GetOpt::Option(char, std::string const&, std::string&, char const*) [90]
+                0.00    0.00       2/2           GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::~_DefValOption() [99]
+                0.00    0.00       1/1           GetOpt::GetOpt_pp::~GetOpt_pp() [116]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[110]    0.0    0.00    0.00       1         StrCorrPattern::delete_graph() [110]
+                0.00    0.00       1/1           Graph::~Graph() [115]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[111]    0.0    0.00    0.00       1         StrCorrPattern::set_parameters(dict::Dictionary*, dict::Dictionary*, int, double, int, int, int, double, int, double, double, int, std::string) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [8]
+[112]    0.0    0.00    0.00       1         StrCorrPattern::set_expected_epsilon_analytical() [112]
+                0.00    0.00   34521/34677       Graph::size() const [69]
+                0.00    0.00   34520/34520       Graph::get_num_neighbors(unsigned int) const [70]
+                0.00    0.00     179/179         Graph::get_max_degree() const [79]
+                0.00    0.00     177/383         dict::Dictionary::size() const [77]
+                0.00    0.00       1/1           std::vector<double, std::allocator<double> >::reserve(unsigned int) [119]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[113]    0.0    0.00    0.00       1         QuasiCliqueCand::set_search_space_strategy_dfs() [113]
+-----------------------------------------------
+                0.00    0.00       1/1           SCPMParameters::check() [89]
+[114]    0.0    0.00    0.00       1         InvalidInputParameterSettingException::~InvalidInputParameterSettingException() [114]
+-----------------------------------------------
+                0.00    0.00       1/1           StrCorrPattern::delete_graph() [110]
+[115]    0.0    0.00    0.00       1         Graph::~Graph() [115]
+-----------------------------------------------
+                0.00    0.00       1/1           SCPMParameters::get(int, char**) [109]
+[116]    0.0    0.00    0.00       1         GetOpt::GetOpt_pp::~GetOpt_pp() [116]
+                0.00    0.00       1/1           std::_Rb_tree<std::string, std::pair<std::string const, GetOpt::OptionData>, std::_Select1st<std::pair<std::string const, GetOpt::OptionData> >, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, GetOpt::OptionData> >*) [120]
+                0.00    0.00       1/1           std::_Rb_tree<char, std::pair<char const, GetOpt::OptionData>, std::_Select1st<std::pair<char const, GetOpt::OptionData> >, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<char const, GetOpt::OptionData> >*) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           GetOpt::GetOpt_pp::operator>>(GetOpt::_Option const&) [253]
+[117]    0.0    0.00    0.00       1         GetOpt::OptionPresent::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [117]
+-----------------------------------------------
+                0.00    0.00       1/1           GetOpt::_DefValOption<double, GetOpt::_OptionT<double> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [92]
+[118]    0.0    0.00    0.00       1         GetOpt::_OptionT<double>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const [118]
+                0.00    0.00       1/6           SCPMParameters::check() [89]
+-----------------------------------------------
+                0.00    0.00       1/1           StrCorrPattern::set_expected_epsilon_analytical() [112]
+[119]    0.0    0.00    0.00       1         std::vector<double, std::allocator<double> >::reserve(unsigned int) [119]
+-----------------------------------------------
+                0.00    0.00       1/1           GetOpt::GetOpt_pp::~GetOpt_pp() [116]
+[120]    0.0    0.00    0.00       1         std::_Rb_tree<std::string, std::pair<std::string const, GetOpt::OptionData>, std::_Select1st<std::pair<std::string const, GetOpt::OptionData> >, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, GetOpt::OptionData> >*) [120]
+-----------------------------------------------
+                0.00    0.00       1/1           GetOpt::GetOpt_pp::~GetOpt_pp() [116]
+[121]    0.0    0.00    0.00       1         std::_Rb_tree<char, std::pair<char const, GetOpt::OptionData>, std::_Select1st<std::pair<char const, GetOpt::OptionData> >, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<char const, GetOpt::OptionData> >*) [121]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+ [102] global constructors keyed to showUsageSCPM() (io.cc) [3] QuasiCliqueCand::get_num_vertices_in_quasi_cliques(Subgraph&, std::vector<bool, std::allocator<bool> >&, unsigned int, unsigned int&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [92] GetOpt::_DefValOption<double, GetOpt::_OptionT<double> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const
+ [103] global constructors keyed to num_combinations(unsigned int, unsigned int) (str_corr.cc) [4] QuasiCliqueCand::get_vertices_in_quasi_cliques_dfs(std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<bool, std::allocator<bool> >&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, unsigned int) [88] GetOpt::_DefValOption<int, GetOpt::_OptionT<int> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const
+ [104] global constructors keyed to compare_pairs_desc(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) (quasi_clique.cc) [49] QuasiCliqueCand::remove_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*) [95] GetOpt::_OptionT<std::string>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const
+ [105] global constructors keyed to join_lists_with_positions(std::list<unsigned int, std::allocator<unsigned int> >&, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::list<unsigned int, std::allocator<unsigned int> > const&) (subgraph.cc) [20] QuasiCliqueCand::identify_vertices_not_in_quasi_cliques(Subgraph*, std::vector<bool, std::allocator<bool> >*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int, unsigned int) [118] GetOpt::_OptionT<double>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const
+ [106] global constructors keyed to split(std::string const&, char) (util.cc) [21] QuasiCliqueCand::identify_vertices_not_in_quasi_cliques_neighborhood(Subgraph const*, std::vector<bool, std::allocator<bool> > const*, std::vector<bool, std::allocator<bool> >*, unsigned int, unsigned int) [93] GetOpt::_OptionT<int>::_assign(std::vector<std::string, std::allocator<std::string> > const&, std::_Ios_Fmtflags) const
+ [107] global constructors keyed to dict::Dictionary::min_capacity (dictionary.cc) [43] QuasiCliqueCand::QuasiCliqueCand(unsigned int, unsigned int, Subgraph const*) [42] Subgraph::are_neighbors(unsigned int, unsigned int) const
+ [108] global constructors keyed to Graph::Graph() (graph.cc) [47] QuasiCliqueCand::~QuasiCliqueCand() [37] Subgraph::get_neighbors(std::list<unsigned int, std::allocator<unsigned int> >&, unsigned int) const
+  [66] compare_pairs(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) [114] InvalidInputParameterSettingException::~InvalidInputParameterSettingException() [72] Subgraph::get_vertex_id(unsigned int) const
+  [50] compare_pairs_desc(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*) [27] dict::Dictionary::get_term_id(std::string) [19] Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*) const
+  [46] split(std::string const&, char) [53] dict::Dictionary::insert_term(std::string) [17] Subgraph::dfs(int, unsigned int, std::vector<short, std::allocator<short> >*, unsigned int) const
+ [109] SCPMParameters::get(int, char**) [71] dict::Dictionary::get_term(unsigned int) [64] Subgraph::degree(unsigned int) const
+  [89] SCPMParameters::check() [97] dict::Dictionary::Dictionary() [34] std::_Deque_base<std::pair<int, unsigned int>*, std::allocator<std::pair<int, unsigned int>*> >::_M_initialize_map(unsigned int)
+ [110] StrCorrPattern::delete_graph() [98] dict::Dictionary::~Dictionary() [75] std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >::push_back(QuasiCliqueCand* const&)
+ [111] StrCorrPattern::set_parameters(dict::Dictionary*, dict::Dictionary*, int, double, int, int, int, double, int, double, double, int, std::string) [36] Graph::Graph(std::string, dict::Dictionary*) [55] std::list<unsigned int, std::allocator<unsigned int> >::operator=(std::list<unsigned int, std::allocator<unsigned int> > const&)
+   [2] StrCorrPattern::compute_epsilon() [115] Graph::~Graph() [73] std::vector<std::list<unsigned int, std::allocator<unsigned int> >*, std::allocator<std::list<unsigned int, std::allocator<unsigned int> >*> >::reserve(unsigned int)
+  [11] StrCorrPattern::generate_size_k_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, unsigned int, unsigned int, std::basic_ofstream<char, std::char_traits<char> >&) [99] GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::~_DefValOption() [52] std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> >::reserve(unsigned int)
+   [8] StrCorrPattern::generate_size_one_scps(std::list<StrCorrPattern*, std::allocator<StrCorrPattern*> >*, std::string const&, std::string const&, std::basic_ofstream<char, std::char_traits<char> >&) [90] GetOpt::Option(char, std::string const&, std::string&, char const*) [51] std::vector<std::string, std::allocator<std::string> >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, std::string const&)
+  [38] StrCorrPattern::get_expected_epsilon_analytical(unsigned int) [116] GetOpt::GetOpt_pp::~GetOpt_pp() [96] std::vector<std::string, std::allocator<std::string> >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, unsigned int, std::string const&)
+ [112] StrCorrPattern::set_expected_epsilon_analytical() [48] Subgraph::remove_vertex(unsigned int) [87] std::vector<std::string, std::allocator<std::string> >::~vector()
+  [59] StrCorrPattern::StrCorrPattern(StrCorrPattern*, StrCorrPattern*) [35] Subgraph::Subgraph(Graph const&, std::list<unsigned int, std::allocator<unsigned int> > const&) [56] std::vector<std::string, std::allocator<std::string> >::operator=(std::vector<std::string, std::allocator<std::string> > const&)
+  [86] StrCorrPattern::StrCorrPattern(unsigned int) [32] Subgraph::Subgraph(Subgraph const&, Subgraph const&) [100] std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::list<unsigned int, std::allocator<unsigned int> >*, std::vector<std::list<unsigned int, std::allocator<unsigned int> >, std::allocator<std::list<unsigned int, std::allocator<unsigned int> > > > >, unsigned int, std::list<unsigned int, std::allocator<unsigned int> > const&)
+  [54] StrCorrPattern::~StrCorrPattern() [57] Subgraph::~Subgraph() [10] std::vector<bool, std::allocator<bool> >::at(unsigned int)
+  [80] QuasiCliqueCand::set_min_gamma(double) [84] StrCorrPattern::print(std::ostream&) const [85] std::vector<bool, std::allocator<bool> >::reserve(unsigned int)
+   [6] QuasiCliqueCand::vertex_pruning(QuasiCliqueCand&, bool&, unsigned int) [31] QuasiCliqueCand::get_cand_ext(std::vector<unsigned int, std::allocator<unsigned int> >&) const [78] std::vector<bool, std::allocator<bool> >::~vector()
+  [15] QuasiCliqueCand::degree_pruning_x(unsigned int) [14] QuasiCliqueCand::get_degree_x(unsigned int) const [119] std::vector<double, std::allocator<double> >::reserve(unsigned int)
+  [58] QuasiCliqueCand::is_quasi_clique_x() [23] QuasiCliqueCand::is_extensible(unsigned int, unsigned int) const [65] std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, unsigned int const&)
+  [26] QuasiCliqueCand::get_new_candidates(QuasiCliqueCand&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&, std::vector<bool, std::allocator<bool> >&) [74] QuasiCliqueCand::insert_vertices_x(std::vector<bool, std::allocator<bool> >&) const [16] std::vector<unsigned int, std::allocator<unsigned int> >::at(unsigned int)
+  [24] QuasiCliqueCand::cover_vertex_pruning() [7] QuasiCliqueCand::get_degree_cand_ext(unsigned int) const [44] std::vector<unsigned int, std::allocator<unsigned int> >::reserve(unsigned int)
+  [12] QuasiCliqueCand::diameter_based_pruning(unsigned int, bool&) [76] QuasiCliqueCand::insert_vertices_cand_ext(std::vector<bool, std::allocator<bool> >&) const [120] std::_Rb_tree<std::string, std::pair<std::string const, GetOpt::OptionData>, std::_Select1st<std::pair<std::string const, GetOpt::OptionData> >, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, GetOpt::OptionData> >*)
+  [33] QuasiCliqueCand::remove_vertex_cand_ext(unsigned int) [41] QuasiCliqueCand::check_vertices_quasi_clique_candidate(std::vector<bool, std::allocator<bool> > const&, std::vector<unsigned int, std::allocator<unsigned int> > const&) const [67] std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<std::string const, unsigned int> const&)
+  [22] QuasiCliqueCand::critical_vertex_pruning(unsigned int) [25] QuasiCliqueCand::lower_bound_vertices_can_be_added_to_x() const [30] std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*, std::string const&)
+   [9] QuasiCliqueCand::degree_pruning_cand_ext(unsigned int) [18] QuasiCliqueCand::upper_bound_vertices_can_be_added_to_x() const [101] std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique(std::pair<std::string const, unsigned int> const&)
+  [81] QuasiCliqueCand::get_diameter_upper_bound(unsigned int, double) [77] dict::Dictionary::size() const [68] std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<std::string const, unsigned int> >, std::pair<std::string const, unsigned int> const&)
+  [82] QuasiCliqueCand::set_diameter_upper_bound() [79] Graph::get_max_degree() const [28] std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::find(std::string const&)
+  [29] QuasiCliqueCand::is_quasi_clique_look_ahead() [40] Graph::get_neighborhood(unsigned int) const [94] std::_Rb_tree<std::string, std::pair<std::string const, unsigned int>, std::_Select1st<std::pair<std::string const, unsigned int> >, dict::eqstr, std::allocator<std::pair<std::string const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned int> >*)
+  [83] QuasiCliqueCand::set_min_size_quasi_cliques(unsigned int) [70] Graph::get_num_neighbors(unsigned int) const [121] std::_Rb_tree<char, std::pair<char const, GetOpt::OptionData>, std::_Select1st<std::pair<char const, GetOpt::OptionData> >, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >::_M_erase(std::_Rb_tree_node<std::pair<char const, GetOpt::OptionData> >*)
+  [13] QuasiCliqueCand::candidate_extension_pruning(unsigned int, unsigned int) [69] Graph::size() const [45] void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*)>(__gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, __gnu_cxx::__normal_iterator<std::pair<unsigned int, unsigned int>**, std::vector<std::pair<unsigned int, unsigned int>*, std::allocator<std::pair<unsigned int, unsigned int>*> > >, int, bool (*)(std::pair<unsigned int, unsigned int>*, std::pair<unsigned int, unsigned int>*))
+   [5] QuasiCliqueCand::get_vertices_in_quasi_cliques(QuasiCliqueCand&, std::vector<bool, std::allocator<bool> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::list<QuasiCliqueCand*, std::allocator<QuasiCliqueCand*> >&, std::vector<unsigned int, std::allocator<unsigned int> >&) [117] GetOpt::OptionPresent::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const [39] void std::__introsort_loop<__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int>(__gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int, std::allocator<unsigned int> > >, int)
+ [113] QuasiCliqueCand::set_search_space_strategy_dfs() [91] GetOpt::_DefValOption<std::string, GetOpt::_OptionT<std::string> >::operator()(std::map<char, GetOpt::OptionData, std::less<char>, std::allocator<std::pair<char const, GetOpt::OptionData> > >&, std::map<std::string, GetOpt::OptionData, std::less<std::string>, std::allocator<std::pair<std::string const, GetOpt::OptionData> > >&, std::_Ios_Fmtflags) const
